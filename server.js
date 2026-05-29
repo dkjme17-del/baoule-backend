@@ -102,7 +102,7 @@ FIN_EXEMPLES
     const timeoutMs = Number(process.env.GEMINI_TIMEOUT_MS || 30000);
     const timeout = setTimeout(() => controller.abort(), timeoutMs);
     
-   const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
+   const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
     // Resolve model path: accept either 'models/NAME' or 'NAME'
     const modelPath = GEMINI_MODEL.startsWith('models/') ? GEMINI_MODEL : `models/${GEMINI_MODEL}`;
     // If model name contains 'gemini' prefer the generateContent API, otherwise use generateText
