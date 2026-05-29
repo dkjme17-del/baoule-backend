@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.env'), override: true });
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 const app = express();
 app.use(cors());
@@ -99,8 +101,8 @@ FIN_EXEMPLES
     const controller = new AbortController();
     const timeoutMs = Number(process.env.GEMINI_TIMEOUT_MS || 30000);
     const timeout = setTimeout(() => controller.abort(), timeoutMs);
-
-    const GEMINI_MODEL = process.env.GEMINI_MODEL || 'models/gemini-2.5-flash';
+    
+   const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
     // Resolve model path: accept either 'models/NAME' or 'NAME'
     const modelPath = GEMINI_MODEL.startsWith('models/') ? GEMINI_MODEL : `models/${GEMINI_MODEL}`;
     // If model name contains 'gemini' prefer the generateContent API, otherwise use generateText
