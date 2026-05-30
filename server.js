@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '.env'), override: true });
+const fs = require('fs');
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
@@ -56,8 +56,11 @@ function buildDictionaryContext() {
       lines.push(`  "${p.baoule}" = ${p.français}`);
     }
   }
-  lines.push('\nSi le mot demandé est dans ce dictionnaire, utilise EXACTEMENT la forme indiquée.');
-  lines.push('Si le mot n\'est PAS dans ce dictionnaire, écris "Je suis incertain de cette forme".');
+  lines.push('\nRÈGLES D\'UTILISATION DU DICTIONNAIRE:');
+  lines.push('1. Si le mot demandé est dans ce dictionnaire, utilise EXACTEMENT la forme indiquée.');
+  lines.push('2. Si l\'apprenant affirme une traduction INCORRECTE (ex: "DI veut dire manger"), vérifie dans le dictionnaire et CORRIGE-le en donnant la bonne forme.');
+  lines.push('3. Si le mot n\'est PAS dans le dictionnaire, utilise tes connaissances Baoulé et ajoute "(à vérifier avec un locuteur natif)".');
+  lines.push('4. Ne dis JAMAIS "je suis incertain" pour un mot qui est dans le dictionnaire ci-dessus.');
   return lines.join('\n');
 }
 
@@ -99,20 +102,22 @@ app.post('/chat', async (req, res) => {
 OBJECTIF: Enseigner le BAOULÉ avec pédagogie et précision.
 
 RÈGLES STRICTES:
-1. Écris toujours le BAOULÉ en MAJUSCULES.
+1. Écris toujours le BAOULÉ en MAJUSCULES avec les diacritiques: ɔ ɛ ɩ ŋ ɓ ɗ
 2. Réponds en français clair et fournis le BAOULÉ complet.
-3. Ne JAMAIS inventer ou deviner des formes BAOULÉ.
-4. Si un mot est dans le dictionnaire ci-dessous, utilise EXACTEMENT cette forme.
-5. Si tu n'es pas certain d'une traduction, réponds uniquement: "Je suis incertain"
-6. Pour une traduction, détaille d'abord chaque mot français, puis donne la phrase BAOULÉ complète.
+3. PRIORITÉ 1 — Si le mot est dans le DICTIONNAIRE ci-dessous: utilise EXACTEMENT cette forme, sans hésitation.
+4. PRIORITÉ 2 — Si le mot N'EST PAS dans le dictionnaire: utilise tes connaissances Baoulé ET indique "(à vérifier avec un locuteur natif)" à la fin de ta réponse.
+5. Ne dis "Je suis incertain" QUE si tu n'as AUCUNE connaissance du mot, même approximative.
+6. Pour une traduction: détaille chaque mot français puis donne la phrase BAOULÉ complète.
 7. Limite la réponse à 250 mots.
-8. Si tu corriges une phrase, indique la correction suivie d'une explication courte.
+8. Si tu corriges une phrase: verdict → correction → explication courte.
+9. Si l'apprenant affirme une traduction fausse: corrige-le avec la forme du dictionnaire ou ta meilleure connaissance.
 
 FORMAT OBLIGATOIRE:
 Français: <texte en français>
 BAOULÉ LITTÉRAL: <mot1 FR → mot1 BAOULÉ ; mot2 FR → mot2 BAOULÉ ; ...>
 BAOULÉ NATUREL: <phrase BAOULÉ complète en MAJUSCULES>
-Explication: <explication courte en français>
+Explication: <explication courte>
+[Source: Dictionnaire vérifié] OU [Source: Gemini — à vérifier avec un locuteur natif]
 
 ${dictContext}
 
@@ -133,6 +138,14 @@ BAOULÉ LITTÉRAL: Merci → MƐDA ASE
 BAOULÉ NATUREL: MƐDA ASE
 Explication: Remerciement standard, très utilisé au quotidien.
 
+Requête: "DI veut dire manger en baoulé"
+❌ CORRECTION: C'est inexact. "DI" ne signifie pas "manger" en Baoulé.
+✅ La forme correcte: Manger → ADUAN (prononciation: a-duan)
+Explication: ADUAN désigne à la fois l'action de manger et la nourriture.
+
+Requête: "je t'informe que X veut dire Y en baoulé"
+→ Vérifie dans le dictionnaire. Si incorrect, corrige avec la bonne forme du dictionnaire. Ne dis jamais "je suis incertain" si le mot est dans le dictionnaire.
+
 FIN_EXEMPLES
 `;
 
@@ -149,8 +162,7 @@ FIN_EXEMPLES
     const timeoutMs = Number(process.env.GEMINI_TIMEOUT_MS || 30000);
     const timeout = setTimeout(() => controller.abort(), timeoutMs);
 
-    const GEMINI_MODEL = process.env.GEMINI_MODEL || 'models/gemini-2.5-flash';
-    // Resolve model path: accept either 'models/NAME' or 'NAME'
+    const GEMINI_MODEL = process.env.GEMINI_MODEL || 'models/gemini-1.5-flash';
     const modelPath = GEMINI_MODEL.startsWith('models/') ? GEMINI_MODEL : `models/${GEMINI_MODEL}`;
     const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/${modelPath}:generateContent?key=${GEMINI_API_KEY}`;
 
