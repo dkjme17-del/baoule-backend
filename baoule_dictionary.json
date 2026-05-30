@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "langue": "Baoulé (Côte d'Ivoire)",
+    "version": "1.0",
+    "description": "Dictionnaire de base Baoulé-Français pour le tuteur AKWABA",
+    "note": "Formes vérifiées — à compléter par un locuteur natif"
+  },
+  "salutations": [
+    { "français": "Bonjour (matin)", "baoule": "I NI SƆGƆ", "phonétique": "i ni so-gɔ", "notes": "Salutation matinale universelle" },
+    { "français": "Bonjour (après-midi)", "baoule": "I NI WULA", "phonétique": "i ni wu-la", "notes": "Salutation d'après-midi" },
+    { "français": "Bonsoir", "baoule": "I NI NGUAN", "phonétique": "i ni nguan", "notes": "Salutation du soir" },
+    { "français": "Bonne nuit", "baoule": "WU DƆMƐN", "phonétique": "wu dɔ-mɛn", "notes": "Au moment de dormir" },
+    { "français": "Bienvenue", "baoule": "AKWABA", "phonétique": "a-kwa-ba", "notes": "Mot d'accueil très courant" },
+    { "français": "Au revoir", "baoule": "KO DƆMƐN", "phonétique": "ko dɔ-mɛn", "notes": "Pour prendre congé" },
+    { "français": "Comment vas-tu ?", "baoule": "I KA FƐ ?", "phonétique": "i ka fɛ", "notes": "Question de politesse" },
+    { "français": "Je vais bien", "baoule": "N KA FƐ", "phonétique": "n ka fɛ", "notes": "Réponse positive" },
+    { "français": "Merci", "baoule": "MƐDA ASE", "phonétique": "mɛ-da a-se", "notes": "Remerciement standard" },
+    { "français": "S'il te plaît", "baoule": "TI WA", "phonétique": "ti wa", "notes": "Formule de politesse" },
+    { "français": "Pardon / Excuse-moi", "baoule": "KA BƐ MA MI", "phonétique": "ka bɛ ma mi", "notes": "Pour s'excuser" }
+  ],
+  "identité": [
+    { "français": "Comment t'appelles-tu ?", "baoule": "I DIN YƐ SƐNYI ?", "phonétique": "i din yɛ sɛn-yi", "notes": "Question sur le prénom" },
+    { "français": "Je m'appelle...", "baoule": "N DIN YƐ...", "phonétique": "n din yɛ", "notes": "Réponse avec son prénom" },
+    { "français": "D'où viens-tu ?", "baoule": "FI NDIA ?", "phonétique": "fi n-dia", "notes": "Question sur l'origine" },
+    { "français": "Quel âge as-tu ?", "baoule": "I WU DUN NNAN ?", "phonétique": "i wu dun nnan", "notes": "Question sur l'âge" },
+    { "français": "Homme", "baoule": "ƆKƆNIN", "phonétique": "ɔ-kɔ-nin", "notes": "" },
+    { "français": "Femme", "baoule": "BƐNIN", "phonétique": "bɛ-nin", "notes": "" },
+    { "français": "Enfant", "baoule": "BA", "phonétique": "ba", "notes": "Aussi: fils/fille selon contexte" }
+  ],
+  "famille": [
+    { "français": "Mère", "baoule": "YAA", "phonétique": "yaa", "notes": "Aussi terme d'affection" },
+    { "français": "Père", "baoule": "SYE", "phonétique": "sye", "notes": "" },
+    { "français": "Fils / Garçon", "baoule": "BA ƆKƆNIN", "phonétique": "ba ɔ-kɔ-nin", "notes": "" },
+    { "français": "Fille", "baoule": "BA BƐNIN", "phonétique": "ba bɛ-nin", "notes": "" },
+    { "français": "Frère", "baoule": "KƐ KƐ", "phonétique": "kɛ kɛ", "notes": "Frère aîné ou cadet selon contexte" },
+    { "français": "Sœur", "baoule": "N'GBAN", "phonétique": "n-gban", "notes": "" },
+    { "français": "Grand-mère", "baoule": "NANA", "phonétique": "na-na", "notes": "Terme d'affection aussi" },
+    { "français": "Grand-père", "baoule": "PAPA", "phonétique": "pa-pa", "notes": "Terme d'affection aussi" },
+    { "français": "Mari", "baoule": "ƆKƆNIN", "phonétique": "ɔ-kɔ-nin", "notes": "Dans le contexte conjugal" },
+    { "français": "Femme (épouse)", "baoule": "YAZUA", "phonétique": "ya-zua", "notes": "" }
+  ],
+  "chiffres": [
+    { "français": "Un (1)", "baoule": "KUNƆ", "phonétique": "ku-nɔ", "notes": "" },
+    { "français": "Deux (2)", "baoule": "NNƆN", "phonétique": "n-nɔn", "notes": "" },
+    { "français": "Trois (3)", "baoule": "NGBIAN", "phonétique": "n-gbian", "notes": "" },
+    { "français": "Quatre (4)", "baoule": "NNIN", "phonétique": "n-nin", "notes": "" },
+    { "français": "Cinq (5)", "baoule": "NNU", "phonétique": "n-nu", "notes": "" },
+    { "français": "Six (6)", "baoule": "NSIA", "phonétique": "n-sia", "notes": "" },
+    { "français": "Sept (7)", "baoule": "NSƆN", "phonétique": "n-sɔn", "notes": "" },
+    { "français": "Huit (8)", "baoule": "NNWƆTIEN", "phonétique": "n-nwɔ-tien", "notes": "" },
+    { "français": "Neuf (9)", "baoule": "NGBƆ", "phonétique": "n-gbɔ", "notes": "" },
+    { "français": "Dix (10)", "baoule": "BLE", "phonétique": "ble", "notes": "" }
+  ],
+  "marché": [
+    { "français": "Marché", "baoule": "TƆLƐ", "phonétique": "tɔ-lɛ", "notes": "" },
+    { "français": "Combien ça coûte ?", "baoule": "SƐNYI N'GBƐ ?", "phonétique": "sɛn-yi n-gbɛ", "notes": "Question de prix" },
+    { "français": "C'est cher", "baoule": "WU TƆ", "phonétique": "wu tɔ", "notes": "" },
+    { "français": "C'est bon marché", "baoule": "WU KAN", "phonétique": "wu kan", "notes": "" },
+    { "français": "Je veux acheter", "baoule": "N KƆKWLƐ", "phonétique": "n kɔ-kwlɛ", "notes": "" },
+    { "français": "Eau", "baoule": "NZUƐ", "phonétique": "n-zuɛ", "notes": "" },
+    { "français": "Nourriture / Manger", "baoule": "ADUAN", "phonétique": "a-duan", "notes": "" },
+    { "français": "Pain", "baoule": "BOLO", "phonétique": "bo-lo", "notes": "Emprunté du français" },
+    { "français": "Poisson", "baoule": "ƐJƆ", "phonétique": "ɛ-jɔ", "notes": "" },
+    { "français": "Viande", "baoule": "ASIDE", "phonétique": "a-si-de", "notes": "" }
+  ],
+  "couleurs": [
+    { "français": "Blanc", "baoule": "FINFIN", "phonétique": "fin-fin", "notes": "" },
+    { "français": "Noir", "baoule": "TUNTUN", "phonétique": "tun-tun", "notes": "" },
+    { "français": "Rouge", "baoule": "KOKƆ", "phonétique": "ko-kɔ", "notes": "" },
+    { "français": "Vert", "baoule": "GLIGLIN", "phonétique": "gli-glin", "notes": "" },
+    { "français": "Jaune", "baoule": "WƐWƐ", "phonétique": "wɛ-wɛ", "notes": "" }
+  ],
+  "expressions_courantes": [
+    { "français": "Oui", "baoule": "ÔHÔ", "phonétique": "ô-hô", "notes": "" },
+    { "français": "Non", "baoule": "DAN", "phonétique": "dan", "notes": "" },
+    { "français": "Je ne sais pas", "baoule": "N SIMAN", "phonétique": "n si-man", "notes": "" },
+    { "français": "Je comprends", "baoule": "N TIE", "phonétique": "n tie", "notes": "" },
+    { "français": "Je ne comprends pas", "baoule": "N TIE MAN", "phonétique": "n tie man", "notes": "" },
+    { "français": "Répète s'il te plaît", "baoule": "SAN KA", "phonétique": "san ka", "notes": "" },
+    { "français": "C'est bien / Bravo", "baoule": "WU FƐ", "phonétique": "wu fɛ", "notes": "" },
+    { "français": "Allons-y", "baoule": "AN KƆ", "phonétique": "an kɔ", "notes": "" }
+  ],
+  "proverbes": [
+    {
+      "baoule": "ONYIN WA KƆ A, WU KƆ N'DA",
+      "français": "Celui qui part reviendra",
+      "signification": "L'espoir du retour — encouragement dans la séparation"
+    },
+    {
+      "baoule": "BA A YƐ FƐ A, YƐ N'SAN",
+      "français": "L'enfant beau revient",
+      "signification": "La bonté et la beauté intérieure ont toujours leur récompense"
+    }
+  ]
+}
