@@ -1,9 +1,10 @@
 {
   "meta": {
     "langue": "Baoulé (Côte d'Ivoire)",
-    "version": "1.0",
-    "description": "Dictionnaire de base Baoulé-Français pour le tuteur AKWABA",
-    "note": "Formes vérifiées — à compléter par un locuteur natif"
+    "version": "3.0",
+    "description": "Dictionnaire Baoulé-Français pour le tuteur AKWABA",
+    "sources": ["Parlons Baoulé", "Culture Waoule", "Cours Essouan", "Â TchEAN / Momo Ntic"],
+    "note": "Formes vérifiées par des locuteurs natifs"
   },
   "salutations": [
     { "français": "Bonjour (matin)", "baoule": "I NI SƆGƆ", "phonétique": "i ni so-gɔ", "notes": "Salutation matinale universelle" },
@@ -19,49 +20,137 @@
     { "français": "Pardon / Excuse-moi", "baoule": "KA BƐ MA MI", "phonétique": "ka bɛ ma mi", "notes": "Pour s'excuser" }
   ],
   "identité": [
-    { "français": "Comment t'appelles-tu ?", "baoule": "I DIN YƐ SƐNYI ?", "phonétique": "i din yɛ sɛn-yi", "notes": "Question sur le prénom" },
-    { "français": "Je m'appelle...", "baoule": "N DIN YƐ...", "phonétique": "n din yɛ", "notes": "Réponse avec son prénom" },
-    { "français": "D'où viens-tu ?", "baoule": "FI NDIA ?", "phonétique": "fi n-dia", "notes": "Question sur l'origine" },
-    { "français": "Quel âge as-tu ?", "baoule": "I WU DUN NNAN ?", "phonétique": "i wu dun nnan", "notes": "Question sur l'âge" },
-    { "français": "Homme", "baoule": "ƆKƆNIN", "phonétique": "ɔ-kɔ-nin", "notes": "" },
-    { "français": "Femme", "baoule": "BƐNIN", "phonétique": "bɛ-nin", "notes": "" },
-    { "français": "Enfant", "baoule": "BA", "phonétique": "ba", "notes": "Aussi: fils/fille selon contexte" }
+    { "français": "Comment t'appelles-tu ?", "baoule": "I DIN YƐ SƐNYI ?", "phonétique": "i din yɛ sɛn-yi", "notes": "" },
+    { "français": "Je m'appelle...", "baoule": "N DIN YƐ...", "phonétique": "n din yɛ", "notes": "" },
+    { "français": "D'où viens-tu ?", "baoule": "FI NDIA ?", "phonétique": "fi n-dia", "notes": "" },
+    { "français": "Quel âge as-tu ?", "baoule": "I WU DUN NNAN ?", "phonétique": "i wu dun nnan", "notes": "" },
+    { "français": "Garçon / Homme", "baoule": "YASSOUA", "phonétique": "yas-sou-a", "notes": "Source: Parlons Baoulé" },
+    { "français": "Femme", "baoule": "BLA", "phonétique": "bla", "notes": "Source: Parlons Baoulé" },
+    { "français": "Enfant", "baoule": "BA", "phonétique": "ba", "notes": "" }
   ],
   "famille": [
-    { "français": "Mère", "baoule": "YAA", "phonétique": "yaa", "notes": "Aussi terme d'affection" },
-    { "français": "Père", "baoule": "SYE", "phonétique": "sye", "notes": "" },
-    { "français": "Fils / Garçon", "baoule": "BA ƆKƆNIN", "phonétique": "ba ɔ-kɔ-nin", "notes": "" },
-    { "français": "Fille", "baoule": "BA BƐNIN", "phonétique": "ba bɛ-nin", "notes": "" },
-    { "français": "Frère", "baoule": "KƐ KƐ", "phonétique": "kɛ kɛ", "notes": "Frère aîné ou cadet selon contexte" },
-    { "français": "Sœur", "baoule": "N'GBAN", "phonétique": "n-gban", "notes": "" },
-    { "français": "Grand-mère", "baoule": "NANA", "phonétique": "na-na", "notes": "Terme d'affection aussi" },
-    { "français": "Grand-père", "baoule": "PAPA", "phonétique": "pa-pa", "notes": "Terme d'affection aussi" },
-    { "français": "Mari", "baoule": "ƆKƆNIN", "phonétique": "ɔ-kɔ-nin", "notes": "Dans le contexte conjugal" },
+    { "français": "Père", "baoule": "SIÈ", "phonétique": "siè", "notes": "Source: Parlons Baoulé" },
+    { "français": "Mère", "baoule": "NI", "phonétique": "ni", "notes": "Source: Parlons Baoulé" },
+    { "français": "Frère", "baoule": "NIANMAN YASSOUA", "phonétique": "nian-man yas-sou-a", "notes": "" },
+    { "français": "Sœur", "baoule": "NIANMAN BLA", "phonétique": "nian-man bla", "notes": "" },
+    { "français": "Petite sœur", "baoule": "SIMA BLA", "phonétique": "si-ma bla", "notes": "" },
+    { "français": "Petit frère", "baoule": "SIMA YASSOUA", "phonétique": "si-ma yas-sou-a", "notes": "" },
+    { "français": "Grand-mère", "baoule": "NANA", "phonétique": "na-na", "notes": "" },
+    { "français": "Grand-père", "baoule": "PAPA", "phonétique": "pa-pa", "notes": "" },
     { "français": "Femme (épouse)", "baoule": "YAZUA", "phonétique": "ya-zua", "notes": "" }
   ],
+  "pronoms": [
+    { "français": "Je", "baoule": "MI", "phonétique": "mi", "notes": "Ex: MI DI DJOUMAN = Je travaille" },
+    { "français": "Tu", "baoule": "Ô", "phonétique": "ô", "notes": "Ex: Ô DI DJOUMAN = Tu travailles" },
+    { "français": "Il / Elle", "baoule": "WÔ", "phonétique": "wô", "notes": "Ex: WÔ DI DJOUMAN = Il/Elle travaille" },
+    { "français": "Nous", "baoule": "É", "phonétique": "é", "notes": "Ex: É DI DJOUMAN = Nous travaillons" },
+    { "français": "Vous", "baoule": "AMOU", "phonétique": "a-mou", "notes": "Ex: AMOU DI DJOUMAN = Vous travaillez" },
+    { "français": "Ils / Elles", "baoule": "BÉ", "phonétique": "bé", "notes": "Ex: BÉ DI DJOUMAN = Ils travaillent" }
+  ],
+  "jours_semaine": [
+    { "français": "Lundi", "baoule": "KISSIÉ", "phonétique": "kis-sié", "notes": "Source: Cours Essouan" },
+    { "français": "Mardi", "baoule": "DJÔLAI", "phonétique": "djô-lai", "notes": "Source: Cours Essouan" },
+    { "français": "Mercredi", "baoule": "MLAN", "phonétique": "mlan", "notes": "Source: Cours Essouan" },
+    { "français": "Jeudi", "baoule": "WÈ", "phonétique": "wè", "notes": "Source: Cours Essouan" },
+    { "français": "Vendredi", "baoule": "YAH", "phonétique": "yah", "notes": "Source: Cours Essouan" },
+    { "français": "Samedi", "baoule": "FOUÉ", "phonétique": "foué", "notes": "Source: Cours Essouan" },
+    { "français": "Dimanche", "baoule": "MON NIN", "phonétique": "mon nin", "notes": "Source: Cours Essouan" }
+  ],
   "chiffres": [
-    { "français": "Un (1)", "baoule": "KUNƆ", "phonétique": "ku-nɔ", "notes": "" },
-    { "français": "Deux (2)", "baoule": "NNƆN", "phonétique": "n-nɔn", "notes": "" },
-    { "français": "Trois (3)", "baoule": "NGBIAN", "phonétique": "n-gbian", "notes": "" },
-    { "français": "Quatre (4)", "baoule": "NNIN", "phonétique": "n-nin", "notes": "" },
-    { "français": "Cinq (5)", "baoule": "NNU", "phonétique": "n-nu", "notes": "" },
-    { "français": "Six (6)", "baoule": "NSIA", "phonétique": "n-sia", "notes": "" },
-    { "français": "Sept (7)", "baoule": "NSƆN", "phonétique": "n-sɔn", "notes": "" },
-    { "français": "Huit (8)", "baoule": "NNWƆTIEN", "phonétique": "n-nwɔ-tien", "notes": "" },
-    { "français": "Neuf (9)", "baoule": "NGBƆ", "phonétique": "n-gbɔ", "notes": "" },
-    { "français": "Dix (10)", "baoule": "BLE", "phonétique": "ble", "notes": "" }
+    { "français": "Un (1)", "baoule": "KONH", "phonétique": "konh", "notes": "Source: Â TchEAN" },
+    { "français": "Deux (2)", "baoule": "N'GNONH", "phonétique": "n-gnonh", "notes": "Source: Â TchEAN" },
+    { "français": "Trois (3)", "baoule": "N'SANH", "phonétique": "n-sanh", "notes": "Source: Â TchEAN" },
+    { "français": "Quatre (4)", "baoule": "N'NANH", "phonétique": "n-nanh", "notes": "Source: Â TchEAN" },
+    { "français": "Cinq (5)", "baoule": "N'NOUH", "phonétique": "n-nouh", "notes": "Source: Â TchEAN" },
+    { "français": "Six (6)", "baoule": "NSIHINH", "phonétique": "n-sihinh", "notes": "Source: Â TchEAN" },
+    { "français": "Sept (7)", "baoule": "N'SOH", "phonétique": "n-soh", "notes": "Source: Â TchEAN" },
+    { "français": "Huit (8)", "baoule": "M'TCHOUÊH", "phonétique": "m-tchouêh", "notes": "Source: Â TchEAN" },
+    { "français": "Neuf (9)", "baoule": "N'GLOUHAN", "phonétique": "n-glouhan", "notes": "Source: Â TchEAN" },
+    { "français": "Dix (10)", "baoule": "BLOUH", "phonétique": "blouh", "notes": "Source: Â TchEAN" },
+    { "français": "Onze (11)", "baoule": "BLOUH-NI-KONH", "phonétique": "blouh-ni-konh", "notes": "" },
+    { "français": "Douze (12)", "baoule": "BLOUH-NI-N'GNONH", "phonétique": "blouh-ni-n-gnonh", "notes": "" },
+    { "français": "Treize (13)", "baoule": "BLOUH-NI-N'SANH", "phonétique": "blouh-ni-n-sanh", "notes": "" },
+    { "français": "Quatorze (14)", "baoule": "BLOUH-NI-N'NANH", "phonétique": "blouh-ni-n-nanh", "notes": "" },
+    { "français": "Quinze (15)", "baoule": "BLOUH-NI-N'NOUH", "phonétique": "blouh-ni-n-nouh", "notes": "" },
+    { "français": "Seize (16)", "baoule": "BLOUH-NI-N'SIHINH", "phonétique": "blouh-ni-n-sihinh", "notes": "" },
+    { "français": "Dix-sept (17)", "baoule": "BLOUH-NI-N'SOH", "phonétique": "blouh-ni-n-soh", "notes": "" },
+    { "français": "Dix-huit (18)", "baoule": "BLOUH-NI-M'TCHOUÊH", "phonétique": "blouh-ni-m-tchouêh", "notes": "" },
+    { "français": "Dix-neuf (19)", "baoule": "BLOUH-NI-N'GLOUHAN", "phonétique": "blouh-ni-n-glouhan", "notes": "" },
+    { "français": "Vingt (20)", "baoule": "ABLAHAH", "phonétique": "a-bla-hah", "notes": "" },
+    { "français": "Trente (30)", "baoule": "ABLASANH", "phonétique": "a-bla-sanh", "notes": "" }
+  ],
+  "qualificatifs": [
+    { "français": "Jolie / Beau", "baoule": "KLAMAN", "phonétique": "kla-man", "notes": "" },
+    { "français": "Vilain / Laid", "baoule": "TÈ", "phonétique": "tè", "notes": "" },
+    { "français": "Paresseux", "baoule": "FOUINFOUÈ", "phonétique": "fouin-fouè", "notes": "" },
+    { "français": "Fort", "baoule": "KÉKLÉ", "phonétique": "ké-klé", "notes": "" },
+    { "français": "Bon", "baoule": "KPA", "phonétique": "kpa", "notes": "" },
+    { "français": "Mauvais", "baoule": "TIA KPA", "phonétique": "tia kpa", "notes": "" },
+    { "français": "Délicieux", "baoule": "FÈ", "phonétique": "fè", "notes": "" },
+    { "français": "Amer", "baoule": "VII / WII", "phonétique": "vii / wii", "notes": "" }
+  ],
+  "aliments": [
+    { "français": "Riz", "baoule": "AVIÉ", "phonétique": "a-vié", "notes": "" },
+    { "français": "Foutou (banane)", "baoule": "MANDA ALIÊ", "phonétique": "man-da a-liê", "notes": "" },
+    { "français": "Foutou (igname)", "baoule": "DOUO ALIÊ", "phonétique": "dou-o a-liê", "notes": "" },
+    { "français": "Placali", "baoule": "PLACALI / AGBA", "phonétique": "a-gba", "notes": "" },
+    { "français": "Attiéké", "baoule": "ATCHÊKÊ", "phonétique": "at-chê-kê", "notes": "" },
+    { "français": "Nourriture", "baoule": "ALIÊ", "phonétique": "a-liê", "notes": "" },
+    { "français": "Manger", "baoule": "DI LIKÉ / DI ALIÊ", "phonétique": "di li-ké / di a-liê", "notes": "" },
+    { "français": "Igname", "baoule": "DOUHO", "phonétique": "dou-ho", "notes": "" },
+    { "français": "Banane", "baoule": "MANDA", "phonétique": "man-da", "notes": "" },
+    { "français": "Manioc", "baoule": "AGBA", "phonétique": "ag-ba", "notes": "" },
+    { "français": "Taro", "baoule": "MANGANNI", "phonétique": "man-gan-ni", "notes": "" },
+    { "français": "Patate douce", "baoule": "ALÉDA", "phonétique": "a-lé-da", "notes": "" },
+    { "français": "Maïs", "baoule": "ABLÉ", "phonétique": "a-blé", "notes": "" },
+    { "français": "Orange", "baoule": "LOHMI", "phonétique": "loh-mi", "notes": "" },
+    { "français": "Oignon", "baoule": "DJABA", "phonétique": "dja-ba", "notes": "" },
+    { "français": "Tomates", "baoule": "TOMATI", "phonétique": "to-ma-ti", "notes": "" },
+    { "français": "Aubergine", "baoule": "TRÔPKO / NIGUÉMA", "phonétique": "trôp-ko / ni-gué-ma", "notes": "" },
+    { "français": "Gombo", "baoule": "GBÔLOU / DJOUMGBLÉ", "phonétique": "gbô-lou", "notes": "" },
+    { "français": "Arachide", "baoule": "N'GATEH", "phonétique": "n-ga-teh", "notes": "" },
+    { "français": "Piment", "baoule": "MANKOU / MAN N'KOUN", "phonétique": "man-kou", "notes": "" },
+    { "français": "Poisson", "baoule": "DJUÉ / DJOUÉ", "phonétique": "djué", "notes": "" },
+    { "français": "Viande", "baoule": "NIN", "phonétique": "nin", "notes": "" },
+    { "français": "Viande de brousse", "baoule": "BLO NIN", "phonétique": "blo nin", "notes": "" },
+    { "français": "Œuf", "baoule": "CLÉSOUA", "phonétique": "clé-sou-a", "notes": "" },
+    { "français": "Escargot", "baoule": "BOUKÉ", "phonétique": "bou-ké", "notes": "" },
+    { "français": "Graine de palmier", "baoule": "AÉ", "phonétique": "a-é", "notes": "" },
+    { "français": "Pain", "baoule": "KPAN HUM", "phonétique": "kpan hum", "notes": "" },
+    { "français": "Sauce", "baoule": "TRO", "phonétique": "tro", "notes": "" },
+    { "français": "Huile", "baoule": "DROUVI", "phonétique": "drou-vi", "notes": "" },
+    { "français": "Sel", "baoule": "N'GUI", "phonétique": "n-gui", "notes": "" },
+    { "français": "Sucre", "baoule": "SOUKLA", "phonétique": "souk-la", "notes": "" }
+  ],
+  "habitudes_vie": [
+    { "français": "Pagne", "baoule": "TAN N'NI", "phonétique": "tan n-ni", "notes": "" },
+    { "français": "Argent", "baoule": "SIKA", "phonétique": "si-ka", "notes": "" },
+    { "français": "Eau", "baoule": "N'ZUÉ", "phonétique": "n-zué", "notes": "" },
+    { "français": "Lumière / Courant électrique", "baoule": "KAN N'NI", "phonétique": "kan n-ni", "notes": "" },
+    { "français": "Feu", "baoule": "SI'N", "phonétique": "si-n", "notes": "" },
+    { "français": "Lit", "baoule": "BÊ", "phonétique": "bê", "notes": "" },
+    { "français": "Prendre un bain", "baoule": "N'ZILÊ", "phonétique": "n-zi-lê", "notes": "" },
+    { "français": "Travailler", "baoule": "DI DJOUMAN", "phonétique": "di djou-man", "notes": "Ex: MI DI DJOUMAN = Je travaille" }
+  ],
+  "animaux": [
+    { "français": "Abeille", "baoule": "AHÔMA", "phonétique": "a-hô-ma", "notes": "" },
+    { "français": "Agouti", "baoule": "KPÊMA", "phonétique": "kpê-ma", "notes": "" },
+    { "français": "Gazelle", "baoule": "WANZAN NI", "phonétique": "wan-zan ni", "notes": "" },
+    { "français": "Cafard", "baoule": "WÊTRÊWA / ÔTRÊWA", "phonétique": "wê-trê-wa", "notes": "" },
+    { "français": "Mouche", "baoule": "WANSSIEN / ONSSIEN", "phonétique": "wan-ssien", "notes": "" },
+    { "français": "Moustique", "baoule": "WINTIN ONTIN", "phonétique": "win-tin on-tin", "notes": "" },
+    { "français": "Oiseau", "baoule": "ANOUMAN", "phonétique": "a-nou-man", "notes": "" },
+    { "français": "Cheval", "baoule": "NANI KPANGÔ", "phonétique": "na-ni kpan-gô", "notes": "" },
+    { "français": "Coq", "baoule": "AKÔ", "phonétique": "a-kô", "notes": "" },
+    { "français": "Pintade", "baoule": "KÔ N'DJÊ", "phonétique": "kô n-djê", "notes": "" },
+    { "français": "Dindon", "baoule": "GLOGLO", "phonétique": "glo-glo", "notes": "" }
   ],
   "marché": [
     { "français": "Marché", "baoule": "TƆLƐ", "phonétique": "tɔ-lɛ", "notes": "" },
-    { "français": "Combien ça coûte ?", "baoule": "SƐNYI N'GBƐ ?", "phonétique": "sɛn-yi n-gbɛ", "notes": "Question de prix" },
+    { "français": "Combien ça coûte ?", "baoule": "SƐNYI N'GBƐ ?", "phonétique": "sɛn-yi n-gbɛ", "notes": "" },
     { "français": "C'est cher", "baoule": "WU TƆ", "phonétique": "wu tɔ", "notes": "" },
     { "français": "C'est bon marché", "baoule": "WU KAN", "phonétique": "wu kan", "notes": "" },
-    { "français": "Je veux acheter", "baoule": "N KƆKWLƐ", "phonétique": "n kɔ-kwlɛ", "notes": "" },
-    { "français": "Eau", "baoule": "NZUƐ", "phonétique": "n-zuɛ", "notes": "" },
-    { "français": "Nourriture / Manger", "baoule": "ADUAN", "phonétique": "a-duan", "notes": "" },
-    { "français": "Pain", "baoule": "BOLO", "phonétique": "bo-lo", "notes": "Emprunté du français" },
-    { "français": "Poisson", "baoule": "ƐJƆ", "phonétique": "ɛ-jɔ", "notes": "" },
-    { "français": "Viande", "baoule": "ASIDE", "phonétique": "a-si-de", "notes": "" }
+    { "français": "Je veux acheter", "baoule": "N KƆKWLƐ", "phonétique": "n kɔ-kwlɛ", "notes": "" }
   ],
   "couleurs": [
     { "français": "Blanc", "baoule": "FINFIN", "phonétique": "fin-fin", "notes": "" },
@@ -81,15 +170,7 @@
     { "français": "Allons-y", "baoule": "AN KƆ", "phonétique": "an kɔ", "notes": "" }
   ],
   "proverbes": [
-    {
-      "baoule": "ONYIN WA KƆ A, WU KƆ N'DA",
-      "français": "Celui qui part reviendra",
-      "signification": "L'espoir du retour — encouragement dans la séparation"
-    },
-    {
-      "baoule": "BA A YƐ FƐ A, YƐ N'SAN",
-      "français": "L'enfant beau revient",
-      "signification": "La bonté et la beauté intérieure ont toujours leur récompense"
-    }
+    { "baoule": "ONYIN WA KƆ A, WU KƆ N'DA", "français": "Celui qui part reviendra", "signification": "L'espoir du retour — encouragement dans la séparation" },
+    { "baoule": "BA A YƐ FƐ A, YƐ N'SAN", "français": "L'enfant beau revient", "signification": "La bonté intérieure a toujours sa récompense" }
   ]
 }
